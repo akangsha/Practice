@@ -90,6 +90,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             else
                 return d.id; 
         });
+		
+	node.append("text")
+            .attr("dy", -3)
+            .text(function (d) {return d.id+":"+d.id;});
 
     var simulation = d3v4.forceSimulation()
         .force("link", d3v4.forceLink()

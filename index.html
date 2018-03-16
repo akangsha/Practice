@@ -13,7 +13,7 @@
 
 <script>
     var svg = d3.select('#d3_selectable_force_directed_graph');
-    d3.json('https://www.dropbox.com/s/fe8pyi8di0wiw7s/miserables.with-ids.json?dl=0', function(error, graph) {
+    d3.json('https://raw.githubusercontent.com/akangsha/Practice/master/miserables.with-ids.json', function(error, graph) {
         if (!error) {
             //console.log('graph', graph);
             createV4SelectableForceDirectedGraph(svg, graph);
